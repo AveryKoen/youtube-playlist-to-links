@@ -1,12 +1,12 @@
 from pytube import Playlist
 
-playlist_url = "https/www.youtube.com/playlist?list=PLT0FbUlqszacT_OjsY0V0hwpdV055PIf9&si=YpVKEPEdqoly4Sgx"
+playlist_url = "INSERT THE PLAYLIST YOUTUBE URL HERE"
 
 playlist = Playlist(playlist_url)
 
-# Получить ссылки на все видео в плейлисте
+# Get all the video links from the playlist
 video_links = playlist.video_urls
 
-# Вывести ссылки
+# Display the links
 for link in video_links:
     print(link)
